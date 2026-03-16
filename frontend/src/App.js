@@ -72,6 +72,9 @@ const App = () => {
       <div className="mt-10 w-full max-w-2xl px-4">
         {data !== null ? (
           <div className="flex flex-col items-center animate-fade-in">
+            <div className="w-full mb-6">
+              <h2 className="text-2xl font-bold text-center text-gray-800">{data.data.title}</h2>
+            </div>
             <div className="w-full aspect-video bg-gray-100 rounded-xl overflow-hidden shadow-2xl mb-8 border border-gray-200">
               <iframe
                 className="w-full h-full"
