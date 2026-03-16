@@ -1,0 +1,8 @@
+{
+  "name": "youtube-downloader-root",
+  "private": true,
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "install-frontend": "cd frontend && npm install"
+  }
+}

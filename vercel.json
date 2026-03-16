@@ -1,16 +1,10 @@
 {
   "version": 2,
+  "public": true,
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/frontend/$1"
-    }
-  ],
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "/frontend/index.html",
-      "permanent": false
+      "destination": "/frontend/build/$1"
     }
   ]
 }
