@@ -13,8 +13,9 @@ const App = () => {
     setError(null);
     setData(null);
     try {
+        const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:4000";
         const response = await axios.get(
-          `http://localhost:4000/download?url=${urlValue}`
+          `${apiUrl}/download?url=${urlValue}`
         );
         setData(response.data);
     } catch (err) {
